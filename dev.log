@@ -1,0 +1,127 @@
+
+> interview-trainer@0.1.0 dev
+> next dev -p 3111
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3111
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 3.1s
+ ✓ Compiled /api/sync in 385ms (59 modules)
+ GET /api/sync 200 in 3201ms
+ POST /api/sync 200 in 1291ms
+ GET /api/sync?deviceId=test-device-001 200 in 160ms
+ ✓ Compiled in 310ms (59 modules)
+ ○ Compiling / ...
+ ✓ Compiled / in 3.3s (871 modules)
+ GET / 200 in 3485ms
+ GET /api/sync 200 in 1562ms
+ ✓ Compiled in 324ms (415 modules)
+ ✓ Compiled in 149ms (415 modules)
+ ✓ Compiled in 138ms (415 modules)
+ ✓ Compiled in 168ms (416 modules)
+ ✓ Compiled in 122ms (416 modules)
+ ✓ Compiled in 1106ms (430 modules)
+ ○ Compiling / ...
+ ✓ Compiled / in 989ms (424 modules)
+ GET / 200 in 1110ms
+ ✓ Compiled /api/sync in 108ms (457 modules)
+ GET /api/sync 200 in 1505ms
+ ✓ Compiled in 24ms
+ ○ Compiling /api/sync ...
+ ✓ Compiled /api/sync in 841ms (59 modules)
+ GET /api/sync 200 in 2098ms
+ POST /api/sync 500 in 182ms
+ POST /api/sync 500 in 8ms
+ ✓ Compiled in 27ms
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from C:\Users\bruno\source\interview-trainer\.next\cache\webpack\server-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ✓ Compiled /api/sync in 49ms (59 modules)
+ POST /api/sync 200 in 1751ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1738ms (457 modules)
+ GET / 200 in 2685ms
+ GET /api/sync 200 in 630ms
+ ✓ Compiled in 482ms (416 modules)
+ ✓ Compiled in 127ms (416 modules)
+ ✓ Compiled in 134ms (416 modules)
+ ✓ Compiled in 102ms (416 modules)
+ ✓ Compiled in 244ms (416 modules)
+ ✓ Compiled in 123ms (416 modules)
+ ✓ Compiled in 133ms (416 modules)
+ ✓ Compiled in 119ms (416 modules)
+ ✓ Compiled in 103ms (416 modules)
+ ✓ Compiled in 134ms (416 modules)
+ ✓ Compiled in 113ms (416 modules)
+ ✓ Compiled in 203ms (416 modules)
+ ✓ Compiled in 106ms (416 modules)
+ ✓ Compiled in 170ms (416 modules)
+ ✓ Compiled in 104ms (416 modules)
+ ✓ Compiled in 304ms (430 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Users\bruno\source\interview-trainer\.next\cache\webpack\client-development\6.pack.gz_' -> 'C:\Users\bruno\source\interview-trainer\.next\cache\webpack\client-development\6.pack.gz'
+ ✓ Compiled in 197ms (416 modules)
+ ✓ Compiled in 147ms (416 modules)
+ ✓ Compiled in 130ms (416 modules)
+ ✓ Compiled in 122ms (416 modules)
+ ✓ Compiled in 122ms (416 modules)
+ ✓ Compiled in 114ms (416 modules)
+ ✓ Compiled in 94ms (416 modules)
+ ✓ Compiled in 120ms (416 modules)
+ ✓ Compiled in 170ms (416 modules)
+ ✓ Compiled in 263ms (416 modules)
+ ✓ Compiled in 246ms (416 modules)
+ ✓ Compiled in 173ms (416 modules)
+ ✓ Compiled in 168ms (416 modules)
+ ✓ Compiled in 221ms (416 modules)
+ ✓ Compiled in 181ms (416 modules)
+ ✓ Compiled in 115ms (416 modules)
+ ✓ Compiled in 133ms (416 modules)
+ ✓ Compiled in 93ms (416 modules)
+ ✓ Compiled in 118ms (416 modules)
+ ✓ Compiled in 92ms (416 modules)
+ ✓ Compiled in 103ms (416 modules)
+ ✓ Compiled in 203ms (430 modules)
+ ✓ Compiled in 117ms (416 modules)
+ ✓ Compiled in 112ms (416 modules)
+ ✓ Compiled in 99ms (416 modules)
+ ✓ Compiled in 109ms (416 modules)
+ ✓ Compiled in 90ms (416 modules)
+ ✓ Compiled in 166ms (416 modules)
+ ✓ Compiled in 108ms (416 modules)
+ ✓ Compiled in 137ms (416 modules)
+ ✓ Compiled in 110ms (416 modules)
+ ✓ Compiled in 136ms (416 modules)
+ ✓ Compiled in 114ms (416 modules)
+ ✓ Compiled in 142ms (416 modules)
+ ✓ Compiled in 101ms (416 modules)
+ ✓ Compiled in 146ms (416 modules)
+ ✓ Compiled in 177ms (430 modules)
+   Reload env: .env.local
+ ✓ Compiled in 78ms (416 modules)
+ ✓ Compiled in 100ms (416 modules)
+ ✓ Compiled in 115ms (416 modules)
+ ✓ Compiled in 170ms (430 modules)
+ ✓ Compiled in 130ms (416 modules)
+ ✓ Compiled in 117ms (416 modules)
+ ✓ Compiled in 120ms (416 modules)
+ ✓ Compiled in 115ms (416 modules)
+ ✓ Compiled in 150ms (416 modules)
+ ✓ Compiled in 121ms (417 modules)
+ ✓ Compiled in 148ms (417 modules)
+ ○ Compiling / ...
+ ✓ Compiled / in 1164ms (425 modules)
+ GET / 200 in 1305ms
+ ✓ Compiled /api/auth/register in 208ms (517 modules)
+ POST /api/auth/register 200 in 2615ms
+ ✓ Compiled /api/auth/me in 126ms (519 modules)
+ GET /api/auth/me 200 in 186ms
+ ✓ Compiled /api/config in 150ms (521 modules)
+ GET /api/config 200 in 177ms
+ ✓ Compiled /api/sync in 99ms (523 modules)
+ POST /api/sync 200 in 1112ms
+ GET /api/sync?userId=0650af69-61d5-4bd1-a66e-df3a95919690 200 in 163ms
+ ✓ Compiled /api/auth/logout in 107ms (525 modules)
+ POST /api/auth/logout 200 in 135ms
+ GET /api/auth/me 200 in 10ms
+ ✓ Compiled /api/events in 131ms (527 modules)
+ POST /api/events 200 in 1438ms
