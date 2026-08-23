@@ -68,6 +68,7 @@ export default function TutorApp() {
   const [session, setSession] = useState<{ id: string; email: string; name: string } | null>(null);
   const sessionRef = useRef(session);
   const [authOpen, setAuthOpen] = useState(false);
+  const [meChecked, setMeChecked] = useState(false);
 
   useEffect(() => {
     setState(loadState());
@@ -97,10 +98,13 @@ export default function TutorApp() {
 
   // Sesión actual al montar.
   useEffect(() => {
-    void fetchMe().then((u) => {
-      sessionRef.current = u;
-      setSession(u);
-    });
+    void fetchMe()
+      .then((u) => {
+        sessionRef.current = u;
+        setSession(u);
+      })
+      .catch(() => {})
+      .finally(() => setMeChecked(true));
   }, []);
 
   // Debounce 4s tras cada cambio de estado.
@@ -380,7 +384,7 @@ export default function TutorApp() {
 
   const currentConcept = nextConcept(state) || CONCEPTS[0].id;
 
-  if (!hydrated) {
+  if (!hydrated || !meChecked) {
     return (
       <div className="app tutor-app">
         <header className="tutor-header">
@@ -393,6 +397,29 @@ export default function TutorApp() {
           </div>
         </header>
         <div className="panel empty-box">Preparando tu entrenamiento…</div>
+      </div>
+    );
+  }
+
+  // Sin sesión no hay diagnóstico ni curso: muro de login.
+  if (!session) {
+    return (
+      <div className="app tutor-app auth-shell">
+        <section className="auth-panel">
+          <div className="auth-brand">SpeakForge</div>
+          <p className="auth-kicker">Inglés funcional para TI</p>
+          <h1>Empieza con tu diagnóstico</h1>
+          <p className="auth-copy">
+            Crea tu cuenta o inicia sesión para hacer la evaluación de nivel, guardar tu progreso
+            y sincronizarlo entre dispositivos.
+          </p>
+          <button className="start-btn" onClick={() => setAuthOpen(true)}>
+            Iniciar sesión o crear cuenta
+          </button>
+        </section>
+        {authOpen && (
+          <AuthModal onClose={() => setAuthOpen(false)} onAuthed={(user) => void handleAuthed(user)} />
+        )}
       </div>
     );
   }
